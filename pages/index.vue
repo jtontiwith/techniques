@@ -1,7 +1,16 @@
 <template>
-  <div>yo</div>
+  <div>
+    <AppCallOut />
+    <AppFeed />
+  </div>
 </template>
 
 <script>
-export default {}
+import AppFeed from '@/components/AppFeed.vue'
+import AppCallOut from '@/components/AppCallOut.vue'
+export default {
+  layout: 'home',
+  AppFeed,
+  AppCallOut,
+}
 </script>

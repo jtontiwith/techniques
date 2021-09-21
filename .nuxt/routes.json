@@ -1,0 +1,23 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/Users/Oiga/projects/techniques/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_4ce219b0"
+  },
+  {
+    "name": "howto",
+    "path": "/howto",
+    "component": "/Users/Oiga/projects/techniques/pages/howto.vue",
+    "chunkName": "pages/howto",
+    "_name": "_59d86134"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/Oiga/projects/techniques/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_0d726426"
+  }
+]
