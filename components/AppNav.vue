@@ -1,31 +1,17 @@
 <template>
-  <!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
   <nav class="flex items-center h-20 bg-white border-b border-blue-100">
     <div class="flex-1 max-w-full px-2 sm:px-4 lg:px-8">
-      <div class="flex justify-between h-16">
+      <div class="flex justify-between">
         <div class="flex px-2 lg:px-0">
-          <div class="flex items-center flex-shrink-0">
-            <img
-              class="block w-auto h-11"
-              src="~/assets/logo.jpg"
-              alt="Workflow"
-            />
-          </div>
+          <NuxtLink to="/">
+            <div class="flex items-center flex-shrink-0">
+              <img
+                class="block w-auto h-11"
+                src="~/assets/logo.jpg"
+                alt="Workflow"
+              />
+            </div>
+          </NuxtLink>
           <div
             class="flex items-center justify-center flex-1 px-2  lg:ml-6 lg:justify-end"
           >
@@ -216,7 +202,7 @@
           <div>Sign In</div>
           <button
             type="button"
-            class="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm  bg-primary-button hover:primary-button focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            class="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm  bg-primary-button hover:primary-button focus:outline-none"
           >
             Sign Up
           </button>

@@ -19,6 +19,7 @@ export const state = () => ({
       comments: [{}, {}, {}],
       category: 'business',
       img: '',
+      link: 'okrs',
     },
     {
       name: 'Habit Stacking',
@@ -31,6 +32,7 @@ export const state = () => ({
       comments: [{}, {}, {}],
       category: 'personal',
       img: '',
+      link: 'habitstacking',
     },
     {
       name: 'Self Distancing',
@@ -43,6 +45,7 @@ export const state = () => ({
       comments: [{}, {}, {}],
       category: 'personal',
       img: '',
+      link: 'selfdistancing',
     },
     {
       name: '30 Day Challenges',
@@ -55,6 +58,7 @@ export const state = () => ({
       comments: [{}, {}, {}],
       category: 'personal',
       img: '',
+      link: '30daychallenges',
     },
     {
       name: '5 Year Plan',
@@ -67,6 +71,7 @@ export const state = () => ({
       comments: [{}, {}, {}],
       category: 'personal',
       img: '',
+      link: 'fiveyearplan',
     },
     {
       name: 'Shutdown Ritual',
@@ -79,6 +84,7 @@ export const state = () => ({
       comments: [{}, {}, {}],
       category: 'personal',
       img: '',
+      link: 'shutdownritual',
     },
     {
       name: 'User Story',
@@ -91,6 +97,7 @@ export const state = () => ({
       comments: [{}, {}, {}],
       category: 'business',
       img: '',
+      link: 'userstoy',
     },
     {
       name: 'Being, Doing, Becoming',
@@ -103,6 +110,7 @@ export const state = () => ({
       comments: [{}, {}, {}],
       category: 'personal',
       img: '',
+      link: 'beingdoingbecoming',
     },
     {
       name: 'Self Congruence',
@@ -117,6 +125,7 @@ export const state = () => ({
       comments: [{}, {}, {}],
       category: 'personal',
       img: '',
+      link: 'selfcongruency',
     },
   ],
   sidebarData: [
