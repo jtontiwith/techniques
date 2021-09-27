@@ -1,9 +1,9 @@
 <template>
-  <div></div>
+  <div>OKRs here</div>
 </template>
 
 <script>
 export default {
-  layout: 'technique',
+  layout: 'Technique',
 }
 </script>

@@ -1,9 +1,9 @@
 <template>
-  <div></div>
+  <div>Habit Stacking here</div>
 </template>
 
 <script>
 export default {
-  layout: 'technique',
+  layout: 'Technique',
 }
 </script>

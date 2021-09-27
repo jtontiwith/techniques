@@ -72,7 +72,7 @@
           <!-- Mobile menu button -->
           <button
             type="button"
-            class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md  hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+            class="inline-flex items-center justify-center p-2 text-gray-400 rounded-sm  hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
             aria-controls="mobile-menu"
             aria-expanded="false"
           >
@@ -202,7 +202,7 @@
           <div>Sign In</div>
           <button
             type="button"
-            class="inline-flex items-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm  bg-primary-button hover:primary-button focus:outline-none"
+            class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-sm shadow-sm  hover:primary-button focus:outline-none"
           >
             Sign Up
           </button>

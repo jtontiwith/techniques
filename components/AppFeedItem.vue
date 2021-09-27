@@ -1,10 +1,11 @@
 <template>
   <li
     :key="technique.id"
-    class="py-4 hover:bg-home-blue"
-    :class="[large ? 'px-0' : 'px-6']"
+    class="hover:bg-home-blue"
+    :class="[large ? 'px-0 pb-2' : 'px-6 py-4']"
   >
-    <NuxtLink :to="{ path: toPath, query: { index: index } }">
+    <!--<NuxtLink :to="{ path: toPath, query: { index: index } }">-->
+    <NuxtLink :to="{ path: '/explainer', query: { index: index } }">
       <div class="flex justify-between">
         <div class="flex">
           <img

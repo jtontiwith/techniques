@@ -25,13 +25,13 @@
       <div class="flex flex-col justify-between py-2 mr-4">
         <button
           type="button"
-          class="inline-flex items-center px-6 py-3 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm  hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          class="inline-flex items-center px-6 py-3 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-sm shadow-sm  hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
         >
           Cite a Technique
         </button>
         <button
           type="button"
-          class="inline-flex items-center px-6 py-3 text-sm text-white border border-transparent rounded-md shadow-sm  bg-primary-button hover:primary-button focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          class="inline-flex items-center px-6 py-3 text-sm text-white border border-transparent rounded-sm shadow-sm  bg-primary-button hover:primary-button focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
         >
           Build a Technique
         </button>

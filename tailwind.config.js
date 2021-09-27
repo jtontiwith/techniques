@@ -7,6 +7,7 @@ module.exports = {
       'primary-input': '#F5F8FF',
       'primary-button': '#f0c332',
       'home-blue': '#fafbff',
+      'badge-blue': '#F8F8F8',
     }),
     extend: {},
   },
