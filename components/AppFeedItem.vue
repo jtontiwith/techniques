@@ -8,10 +8,16 @@
     }"
   >
     <NuxtLink :to="{ path: '/explainer', query: { index: index } }">
-      <div class="flex justify-between">
-        <div class="flex">
+      <div class="justify-between" :class="{ flex: small, 'md:flex': large }">
+        <div
+          :class="{
+            flex: small,
+            'flex flex-col items-center text-center md:flex-row md:text-left':
+              large,
+          }"
+        >
           <img
-            class="mr-4"
+            class="md:mr-4"
             :class="{ 'h-28': large }"
             :src="url + style[index]"
             alt=""

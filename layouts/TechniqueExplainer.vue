@@ -9,17 +9,18 @@
           :index="index"
         >
           <div>
-            <div>
+            <div class="py-4 text-center space-between md:py-0 md:block">
               <NuxtLink
                 :to="{
                   path: `/techniques/${$store.state.techniquesdata[index].link}`,
                   query: { index: index },
                 }"
-                ><BaseButton> TRY IT </BaseButton></NuxtLink
               >
+                <BaseButton> TRY IT </BaseButton>
+              </NuxtLink>
               <BaseButton> ADD TO STACK </BaseButton>
             </div>
-            <div class="py-2">
+            <div class="hidden py-2 md:block">
               <div
                 class="inline-flex px-2 text-sm border border-blue-100  bg-badge-blue"
               >
@@ -40,12 +41,14 @@
           </div>
         </AppFeedItem>
       </ul>
-      <AppBreadCrumbs />
-      <h1 class="mt-10 text-5xl">
-        Quick Guide to
-        {{ $store.state.techniquesdata[index].link }}
-      </h1>
-      <Nuxt />
+      <section class="px-3 md:px-0">
+        <AppBreadCrumbs />
+        <h1 class="mt-10 text-5xl">
+          Quick Guide to
+          {{ $store.state.techniquesdata[index].link }}
+        </h1>
+        <Nuxt />
+      </section>
     </div>
   </div>
 </template>
