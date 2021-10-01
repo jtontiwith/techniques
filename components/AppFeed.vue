@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="flex justify-between mt-8 mb-4">
-      <h1 class="text-lg font-medium">Recent Techniques</h1>
-      <p class="text-sm cursor-pointer">Popular | Newest</p>
+      <h1 class="ml-3 text-lg font-bold sm:ml-0">Recent Techniques</h1>
+      <p class="mr-3 text-sm cursor-pointer sm:mr-0">Popular | Newest</p>
     </div>
     <div class="overflow-hidden bg-white border border-blue-100 rounded">
       <ul role="list" class="divide-y divide-blue-100">
@@ -11,6 +11,8 @@
           :key="technique.id"
           :index="index"
           :technique="technique"
+          :small="true"
+          :hoverable="true"
         >
           <div
             class="flex flex-col items-center w-16 h-16 p-2 bg-white border border-blue-100 rounded cursor-pointer "

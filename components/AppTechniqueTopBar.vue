@@ -4,6 +4,7 @@
       <AppFeedItem
         :technique="$store.state.techniquesdata[index]"
         :index="index"
+        :small="true"
       >
         <div><BaseButton> ADD TO STACK </BaseButton></div>
       </AppFeedItem>

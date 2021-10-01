@@ -1,8 +1,6 @@
 <template>
   <div>
-    <h1 class="mb-4 text-lg font-medium">
-      Popular Books For Extracting Techniques
-    </h1>
+    <h1 class="mb-4 ml-3 text-lg font-bold sm:ml-0">Popular Books</h1>
     <div
       class="flex justify-between px-2 py-4 bg-white border border-blue-100 rounded "
     >

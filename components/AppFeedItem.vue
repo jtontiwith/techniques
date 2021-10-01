@@ -1,10 +1,12 @@
 <template>
   <li
     :key="technique.id"
-    class="hover:bg-home-blue"
-    :class="[large ? 'px-0 pb-2' : 'px-6 py-4']"
+    :class="{
+      'px-6 py-4': small,
+      'px-0 pb-2': large,
+      'hover:bg-home-blue': hoverable,
+    }"
   >
-    <!--<NuxtLink :to="{ path: toPath, query: { index: index } }">-->
     <NuxtLink :to="{ path: '/explainer', query: { index: index } }">
       <div class="flex justify-between">
         <div class="flex">
@@ -63,6 +65,15 @@ export default {
       type: Boolean,
       required: false,
     },
+    small: {
+      type: Boolean,
+      required: false,
+    },
+    hoverable: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
   },
   data: () => ({
     style: [
@@ -76,11 +87,6 @@ export default {
     ],
     url: 'https://doodleipsum.com/80x80/',
   }),
-  computed: {
-    toPath() {
-      return '/techniques/' + this.technique.link
-    },
-  },
   methods: {
     badgeColor(category) {
       if (category === 'business') return 'bg-purple-100 text-purple-800'
