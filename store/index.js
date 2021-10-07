@@ -8,7 +8,7 @@
 
 export const state = () => ({
   techniquesdata: [
-    {
+    /* {
       name: 'OKRs',
       blurb: 'Objectives and Key Results goal-setting framework',
       votes: 0,
@@ -186,6 +186,38 @@ export const state = () => ({
       blurb: 'Explore your shadow',
       id: '1f9500d2-fd27-422e-acc6-48198d0dkloj4l',
       img: '',
-    },
+    }, */
   ],
 })
+
+export const mutations = {
+  updateTechniquesData: (state, data) => {
+    state.techniquesdata = data
+  },
+}
+
+export const actions = {
+  async getTechniques({ state, commit }) {
+    if (state.techniquesdata.length) return
+
+    try {
+      await fetch(
+        'https://kyoftqhw71.execute-api.us-east-2.amazonaws.com/Production/techniques',
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            'x-api-key': process.env.AWS_API_KEY,
+          },
+        }
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          console.log('Success:', data)
+
+          commit('updateTechniquesData', data)
+        })
+    } catch (err) {
+      console.log(err)
+    }
+  },
+}

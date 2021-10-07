@@ -12,7 +12,7 @@
             <div class="py-4 text-center space-between md:py-0 md:block">
               <NuxtLink
                 :to="{
-                  path: `/techniques/${$store.state.techniquesdata[index].link}`,
+                  path: `/techniques/${$store.state.techniquesdata[index].path}`,
                   query: { index: index },
                 }"
               >
