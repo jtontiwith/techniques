@@ -40,7 +40,7 @@
           <a
             href="#"
             class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"
-            >{{ $store.state.techniquesdata[$route.query.index].link }}</a
+            >{{ $store.state.techniquesdata[$route.query.index].path }}</a
           >
         </div>
       </li>
