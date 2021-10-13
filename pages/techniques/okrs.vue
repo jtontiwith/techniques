@@ -70,7 +70,7 @@
 <script>
 import { addId } from '../../utils/uuid.js'
 export default {
-  layout: 'Technique',
+  layout: 'technique',
   data: () => ({
     krPlaceholders: [
       'Work on X 30 minutes before work M-F',
